@@ -5,7 +5,6 @@ A simple and stylish calculator built with HTML, CSS, and JavaScript. It support
 🔗 [Try the Calculator Here](https://simple-calculator30.netlify.app/)
 
 # Features
-✅ Responsive design <br>
 ✅ Dark theme with neon effects<br>
 ✅ Basic arithmetic operations (+, -, *, /)<br>
 ✅ Interactive button hover effects<br>
