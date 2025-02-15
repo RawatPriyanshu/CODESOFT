@@ -2,7 +2,7 @@
 A simple and stylish calculator built with HTML, CSS, and JavaScript. It supports basic arithmetic operations like addition, subtraction, multiplication, and division.
 
 # 🚀 Live Demo
-🔗 Try the Calculator Here
+🔗 [Try the Calculator Here](https://simple-calculator30.netlify.app/)
 
 # Features
 ✅ Responsive design <br>
@@ -23,7 +23,14 @@ A simple and stylish calculator built with HTML, CSS, and JavaScript. It support
 
 # Project Structure
 📂 Calculator  
-├── 📄 index.html  # Main HTML file  
-├── 📄 style.css   # Stylesheet  
-├── 📄 index.js    # JavaScript file  
-└── 📄 README.md   # Project Documentation 
+├── 📄 index.html            # Main HTML file  
+├── 📄 style.css             # Stylesheet  
+├── 📄 index.js              # JavaScript file  
+└── 📄 README.md             # Project Documentation 
+
+# Screenshot
+
+
+# License
+This project is open-source and available under the MIT License.
+
