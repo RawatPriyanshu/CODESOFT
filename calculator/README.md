@@ -28,7 +28,7 @@ A simple and stylish calculator built with HTML, CSS, and JavaScript. It support
 └── 📄 README.md             # Project Documentation 
 
 # Screenshot
-![Calculator Preview](file:///C:/Users/Priyanshu%20Rawat/Pictures/Screenshot%20(7).png)
+<img src="assets/screenshot.png" alt="Calculator Screenshot" width="500">
 
 # License
 This project is open-source and available under the MIT License.
