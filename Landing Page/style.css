@@ -1,0 +1,436 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FFD89B, #FF9A8B);
+}
+/* header */
+.header .container{
+    width: 100%;
+    height: 75px;
+    /* background-color: #8b4513e0 ; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo img{
+    height: 100%;
+}
+.navigations{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-list{
+    width: 600px;
+}
+.nav-list li{
+    position: relative;
+}
+.nav-list li:hover::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: orange;
+    left: 0;
+    bottom: 0;
+    animation: bar 0.3s ease-in;
+}
+
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.order-list{
+    margin: 0 30px;
+}
+.order-list li{
+    width: 90px;
+    height: 40px;
+    background: linear-gradient(135deg, #ea3e00, #FFD700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid greenyellow;
+}
+
+/* banner */
+.banner .container{
+    position: relative;
+    background-image: url('./assets/images/abundance-fresh-organic-fruits-vegetables-generated-by-ai.jpg');
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner h1, h2{
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.8);
+    font-family: 'Lobster', cursive;
+}
+.orderNow li{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.8), rgba(255, 69, 0, 0.8), rgba(255, 215, 0, 0.8));
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid greenyellow;
+}
+
+/* About-us section */
+.about-us h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFD700;
+    -webkit-text-stroke: 1px #c76722;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8); 
+}
+.about-us .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.about-us p{
+    color: white;
+    font-family: cursive;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left, .right{
+    max-width: 400px;
+}
+.left img{
+    width: 100%;
+    border: 4px solid orange;
+}
+.right img{
+    width: 100%;
+    border: 4px solid orange;
+    margin-top: 80px;
+}
+.about-us ul{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+}
+.about-us li{
+    margin-left: 30px;
+}
+
+/* menu section */
+.menu .container {
+    text-align: center;
+    background: linear-gradient(135deg, #D2691E, #ec8d19, #FFD700);
+}
+.menu h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFD700;
+    -webkit-text-stroke: 1px #c76722;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8); 
+    padding-top: 30px;
+}
+.menu p{
+    color: white;
+    font-family: cursive;
+    font-size: 1.2 rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: #fff5e1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-card:hover{
+    box-shadow: 5px 5px red;
+    transform: scale(1.05);
+}
+
+.menu-card div {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.menu-card img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #8B4513;
+}
+
+.menu-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D2691E;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8B4513;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    background-color: orange;
+    border: 2px solid red;
+}
+
+/* special offers section */
+.offers h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFD700;
+    -webkit-text-stroke: 1px #c76722;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8); 
+    padding-top: 30px;
+}
+.offers p{
+    color: white;
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+.offers .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f08e48;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    background: #fff5e1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.offer-card h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #8B4513;
+}
+
+.offer-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D2691E;
+    margin-top: 10px;
+}
+
+.price s {
+    color: #b22222;
+}
+
+.offers .btn {
+    display: inline-block;
+    background: #8B4513;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* contact section */
+.contact .container {
+    background-color: rgb(228, 107, 20);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #FFD700;
+    -webkit-text-stroke: 1px #c76722;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.8); 
+    padding-top: 30px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #D2691E;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(19, 19, 19, 0.2);
+    margin-bottom: 30px;
+}
+
+.contact-form input{
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #D2691E;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    margin: 20px;
+}
+.contact-form textarea {
+    width: 90%;
+    border: 2px solid #D2691E;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FF4500;
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.5);
+}
+
+.contact-form button {
+    background: linear-gradient(135deg, #FF4500, #D2691E);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 25px 0;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(135deg, #D2691E, #FF4500);
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/* footer */
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    height: 100%;
+}
+.copyright{
+    color: white;
+}
+.footer-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
