@@ -3,6 +3,9 @@
 ## 📌 Overview
 This is a **personal portfolio website** showcasing my skills, projects, resume, and contact details. The site is built with **HTML, CSS** to provide a smooth and interactive user experience.
 
+# 🚀 Live Demo
+🔗 [Try the Website Here](https://priyanshu-portfolio-7.netlify.app/)
+
 ## 🎨 Features
 - **Fixed Header** – Navigation stays visible while scrolling.
 - **Smooth Scrolling** – Click navigation links to smoothly scroll to sections.
